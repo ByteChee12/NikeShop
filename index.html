@@ -71,7 +71,7 @@
 				</button>
 
 				<button class="profile-btn" aria-label="profile">
-					<img src="./assets/images/profile.png" width="100" height="100" alt="profile">
+					<img class="img" src="./assets/images/profile.png" width="100" height="100" alt="profile">
 				</button>
 
 			</div>
@@ -92,7 +92,7 @@
 			<section class="section product" aria-label="product">
 				<div class="container">
 					<div class="product-slides">
-						<div class="slider-banner">
+						<div class="slider-banner" data-slider>
 							<figure class="product-banner">
 								<img src="./assets/images/product-1.png" width="600" height="600" 
 									 loading="lazy" alt="Nike Sneaker" class="img-cover">
@@ -114,11 +114,11 @@
 							</figure>
 						</div>
 
-						<button class="slide-btn prev" aria-label="Previous image">
+						<button class="slide-btn prev" aria-label="Previous image" data-prev>
 							<ion-icon name="chevron-back" aria-hidden="true"></ion-icon>
 						</button>
 
-						<button class="slide-btn next" aria-label="Next image">
+						<button class="slide-btn next" aria-label="Next image" data-next>
 							<ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
 						</button>
 					</div>
@@ -135,7 +135,7 @@
 						</p>
 
 						<div class="wrapper">
-							<span class="price">$125.00</span>
+							<span class="price" data-total-price>$125.00</span>
 
 							<span class="badge">50%</span>
 
@@ -144,13 +144,13 @@
 
 						<div class="btn-group">
 							<div class="counter-wrapper">
-								<button class="counter-btn">
+								<button class="counter-btn" data-qty-minus>
 									<ion-icon name="remove-outline"></ion-icon>
 								</button>
 
-								<span class="span">1</span>
+								<span class="span" data-qty>1</span>
 
-								<button class="counter-btn">
+								<button class="counter-btn" data-qty-plus>
 									<ion-icon name="add-outline"></ion-icon>
 								</button>
 							</div>
